@@ -1,0 +1,230 @@
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.bg {
+    background: linear-gradient(#e18598, #ffe7ec);
+    animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.titleText {
+    padding-block: 3em;
+}
+
+@keyframes peek {
+    0% {
+        transform: translateY(0em);
+    }
+    70% {
+        transform: translateY(50%);
+    }
+    100% {
+        transform: translateY(0em);
+    }
+}
+
+.text1 {
+    font-size: 4em;
+    animation: fadeInText ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.text2 {
+    font-size: 3em;
+    opacity: 0;
+    animation: fadeInText ease 2s 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.text2::after {
+    content: "...";
+    animation: fadeInName 9s 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInName {
+    0% {
+        content: "I";
+    }
+    1% {
+        content: "I'";
+    }
+    1.5% {
+        content: "I'm";
+    }
+
+    2% {
+        content: "I'm G";
+    }
+    4% {
+        content: "I'm Gl";
+    }
+    7% {
+        content: "I'm Gle";
+    }
+    10% {
+        content: "I'm Glen";
+    }
+    10% {
+        content: "I'm Glen L";
+    }
+    12% {
+        content: "I'm Glen Lo";
+    }
+    14% {
+        content: "I'm Glen Lor";
+    }
+    15% {
+        content: "I'm Glen Lord";
+    }
+    17% {
+        content: "I'm Glen Lorde";
+    }
+    20% {
+        content: "I'm Glen Lordeo";
+    }
+    22% {
+        content: "I'm Glen Lordeo T";
+    }
+    24% {
+        content: "I'm Glen Lordeo Tu";
+    }
+    26% {
+        content: "I'm Glen Lordeo Tun";
+    }
+    27% {
+        content: "I'm Glen Lordeo Tunj";
+    }
+    28% {
+        content: "I'm Glen Lordeo Tunju";
+    }
+    29% {
+        content: "I'm Glen Lordeo Tunjun";
+    }
+    30% {
+        content: "I'm Glen Lordeo Tunjung";
+    }
+    50% {
+        opacity: 1;
+    }
+    60% {
+        content: "I'm Glen Lordeo Tunjung";
+        opacity: 0;
+    }
+    61% {
+        content: "Nice to meet you.";
+    }
+    100% {
+        opacity: 1;
+        content: "Nice to meet you.";
+    }
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    33% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.picsRow {
+    padding-block: 2em;
+}
+
+.pic-item1 {
+    animation-fill-mode: forwards;
+    animation: hoverUp ease 5s;
+}
+
+.pic-item2 {
+    animation-fill-mode: forwards;
+    animation: hoverUp ease 6s;
+}
+.pic-item3 {
+    animation-fill-mode: forwards;
+    animation: hoverUp ease 7s;
+}
+
+.pic-img {
+    transition: transform 0.2s;
+}
+
+.pic-img:hover {
+    transform: scale(110%);
+}
+
+.aboutText {
+    animation: hoverUp ease 8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hoverUp {
+    0% {
+        opacity: 0;
+        transform: scale(0%);
+    }
+    50% {
+        opacity: 0;
+        transform: scale(0%);
+    }
+    100% {
+        transform: scale(100%);
+        opacity: 1;
+    }
+}
+
+.overlayText {
+    font-size: 2em;
+}
+
+#coding-img {
+    animation: hoverUp ease 3s;
+}
+
+#listGroup {
+    animation: hoverUp ease 3.5s;
+}
+
+.backButton {
+    animation: ease backSlide 2s;
+}
+
+@keyframes backSlide {
+    0% {
+        transform: translateX(-30em);
+    }
+    100% {
+        transform: translateX(0em);
+    }
+}
+
+#lookingGif {
+    animation: fadeInText ease 1s;
+}
+
+#exp1 {
+    animation: fadeInText ease 2s;
+}
+
+#exp2 {
+    animation: fadeInText ease 3s;
+}
